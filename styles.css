@@ -1,154 +1,167 @@
 /* styles.css */
 
+/* Global Styles */
 body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-  }
-  
-  .cover-image {
-    width: 100%;
-    height: 300px;
-    background: url(/images/2024-02-09\ 17.44.59.jpg)
-      center/cover no-repeat;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 30px;
-    background: radial-gradient(
-      circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
-    );
-    color: #fff;
-    position: relative;
-  }
-  
-  .logo-container {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px; /* Make the container square */
-    height: 100px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  .logo-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .buttons-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .button:hover {
-    filter: brightness(1.2);
-  }
-  
-  .button img {
-    width: 20px;
-    margin-right: 10px;
-  }
-  
-  .facebook {
-    background: linear-gradient(to right, #3b5998, #4a69bb);
-  }
-  
-  .telegram {
-    background: linear-gradient(to right, #0088cc, #33a1ff);
-  }
-  
-  .product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .product-item {
-    text-align: center;
-    width: 800px; /* Set the desired width */
-    height: auto; /* Allow the height to adjust based on content */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .product-item img {
-    width: 100%;
-    max-height: 70%; /* Set a maximum height for the image */
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .product-item .product-description {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .product-item p {
-    margin: 0;
-  }
-  
-  /* Product Buttons */
-  .product-buttons {
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-    padding: 10px;
-    background-color: #f2f2f2;
-  }
-  
-  .product-buttons .product-button {
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .product-buttons .product-button:hover {
-    filter: brightness(1.2);
-  }
-  
-  .product-buttons .product-button img {
-    width: 16px;
-    margin-right: 5px;
-  }
-  
-  .product-buttons .facebook {
-    background: linear-gradient(to right, #3b5998, #4a69bb);
-  }
-  
-  .product-buttons .telegram {
-    background: linear-gradient(to right, #0088cc, #33a1ff);
-  }
-  
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Cover Image Styles */
+.cover-image {
+  width: 100%;
+  height: 300px;
+  background: url(/images/2024-02-09\ 17.44.59.jpg) center/cover no-repeat;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: #fff;
+  position: relative;
+}
+
+/* Logo Container Styles */
+.logo-container {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Top Buttons Container Styles */
+.top-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+}
+
+/* Facebook Button Styles */
+.facebook {
+  background: linear-gradient(to right, #3b5998, #4a69bb);
+}
+
+/* Telegram Button Styles */
+.telegram {
+  background: linear-gradient(to right, #0088cc, #33a1ff);
+}
+
+/* LINE Button Styles */
+.line {
+  background: linear-gradient(to right, #00b900, #00e900);
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  text-align: left; /* Align text to the left */
+  max-width: 800px; /* Set the maximum width for the product card */
+  margin: 0 auto; /* Center the product card */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Scale the card slightly on hover */
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-item .product-description {
+  padding: 20px;
+}
+
+.product-item p {
+  margin: 0;
+  font-size: 16px; /* Adjust font size for better readability */
+  line-height: 1.5; /* Improve line height for better spacing */
+  color: #555; /* Use a slightly darker color for text */
+}
+
+/* Product Buttons Styles */
+.product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.product-buttons .product-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Increase padding for buttons */
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.product-buttons .product-button:hover {
+  filter: brightness(1.2);
+}
+
+/* Facebook Button Styles within Product Buttons */
+.product-buttons .facebook {
+  background: linear-gradient(to right, #3b5998, #4a69bb);
+}
+
+/* Telegram Button Styles within Product Buttons */
+.product-buttons .telegram {
+  background: linear-gradient(to right, #0088cc, #33a1ff);
+}
+
+/* LINE Button Styles within Product Buttons */
+.product-buttons .line {
+  background: linear-gradient(to right, #00b900, #00e900);
+}
